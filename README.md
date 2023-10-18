@@ -18,8 +18,8 @@ The purpose of this shell script is to run the WPS program with IMDAA data to pr
 # How to use:
 1. Download IMDAA data and keep all files (single and pressure-level data) in one directory. Give this directory path as "imdaa_data_path" in the user_input file. Do not keep single and pressure-level data separately in different directories.
 2. Create a folder in your preferred location and keep this repository. Nothing else needs to be kept in this directory. or just clone the repository.
-3. Fill all the details in the user_input.sh file
-4. keep the "tables" folder as it is
+3. Fill all the details in the user_input.sh file.
+4. keep the "tables" folder as it is.
 5. Make the script executable:
 
 		chmod +x runscript_ncmrwf.sh
