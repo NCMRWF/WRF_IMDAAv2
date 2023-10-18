@@ -1,0 +1,38 @@
+#-----------------------------------------------------------------------------------------------------------------------------------------------
+#	Let's assume, your home directory is /home/workstation11
+#
+#	The WPS is installed in /home/workstation11/model/WPS-4.4
+#
+#	The static data is kept in /home/workstation11/model/WPS_GEOG
+#
+#	The downloaded IMDAA data is kept in /home/workstation11/imdaadata
+#
+#	Downloaded Git repository is kept in /home/workstation11/WRF_IMDAA. 
+#	This is the place where you need to fill in all the details in user_input.sh and run the runscript_ncmrwf.sh script
+#
+#	Your original namelist.wps is kept in /home/workstation11/myfiles. 
+#	Do not keep the original namelist.wps in the run area (i.e., /home/workstation11/WRF_IMDAA). 
+#	Just mention the namelist file in the wps_namelist option.
+#
+#	Below inputs are the recommended way to fill the user_input.sh :-
+#-----------------------------------------------------------------------------------------------------------------------------------------------
+
+# Path where you kept all downloaded IMDAA data together
+imdaa_data_path=/home/workstation11/imdaadata
+
+# This is the path where you have installed the WPS package
+wps_path=/home/workstation11/model/WPS-4.4
+
+# Static data WPS_GEOG path
+wps_geog_path=/home/workstation11/model/WPS_GEOG
+
+# Put your namelist.wps in this path
+wps_namelist=/home/workstation11/myfiles/namelist.wps
+
+# number of processors if opting for parallel run
+nproc=1
+
+# set false if you do not want to repeat the processes from the start
+SORT_IMDAA=true
+RUN_GEOGRID=true
+RUN_UNGRIB=true
