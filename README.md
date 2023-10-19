@@ -28,10 +28,11 @@ The purpose of this shell script is to run the WPS program with IMDAA data to pr
 
 		 ./runscript_ncmrwf.sh
 # Documentation
-For a detailed description, you may go through the documentation [here](https://github.com/NCMRWF/WRF_IMDAAv2/blob/main/document/WRF_IMDAA_USER_GUIDE.pdf)
+For a detailed description, you may go through the documentation [here](https://github.com/NCMRWF/WRF_IMDAAv2/blob/main/document/WRF_IMDAA_USER_GUIDE.pdf).
 
 # Help
 If you are facing any issues while running this script, please raise a concern [here](https://github.com/NCMRWF/WRF_IMDAAv2/issues) or send an email to vhazra@ncmrwf.gov.in
 
 regards,
+
 V Hazra
