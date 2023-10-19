@@ -10,16 +10,16 @@ The purpose of this shell script is to run the WPS program with IMDAA data to pr
 # PREREQUISITES
 1. WRF pre-processing program (i.e., WPS). This path needs to be given in the user_input file (as "wps_path").
 2. wgrib2 and eccodes for sorting the data.
-3. NETCDF4 and NCKS for checking data.
+3. NETCDF4 and NCKS for checking data
 4. Openmpi, mpich, Intel C, or Intel Fortran for parallel runs. Otherwise, go for a serial run.
 5. Download IMDAA data and keep all files (single- and pressure-level data) in one directory. Give this directory path as "imdaa_data_path" in the user input section. Do not keep single and pressure-level data separately in different directories.
-7. The user must have a namelist.wps in order to run this script. Give the full path in the user_input.sh (preferably keep namelist.wps in a different location so that it stays unchanged).
+7. The user must have a namelist.wps in order to run this script. Give the full path in user_input.sh (preferably keep namelist.wps in a different location to stay unchanged).
 
 # How to use:
 1. Download IMDAA data and keep all files (single and pressure-level data) in one directory. Give this directory path as "imdaa_data_path" in the user_input file. Do not keep single and pressure-level data separately in different directories.
-2. Create a folder in your preferred location and keep this repository. Nothing else needs to be kept in this directory. or just clone the repository.
-3. Fill all the details in the user_input.sh file.
-4. keep the "tables" folder as it is.
+2. Create a folder in your preferred location and keep this repository. Nothing else needs to be kept in this directory. or clone the repository.
+3. Fill in all the details in the user_input.sh file.
+4. Keep the "tables" folder as it is.
 5. Make the script executable:
 
 		chmod +x runscript_ncmrwf.sh
@@ -27,3 +27,12 @@ The purpose of this shell script is to run the WPS program with IMDAA data to pr
 8. Then type:
 
 		 ./runscript_ncmrwf.sh
+# Documentation
+For a detailed description, you may go through the documentation [here](https://github.com/NCMRWF/WRF_IMDAAv2/blob/main/document/WRF_IMDAA_USER_GUIDE.pdf).
+
+# Help
+If you are facing any issues while running this script, please raise a concern [here](https://github.com/NCMRWF/WRF_IMDAAv2/issues) or send an email to vhazra@ncmrwf.gov.in
+
+regards,
+
+V Hazra
