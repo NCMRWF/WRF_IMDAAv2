@@ -13,7 +13,7 @@ The purpose of this shell script is to run the WPS program with IMDAA data to pr
 3. NETCDF4 and NCKS for checking data
 4. Openmpi, mpich, Intel C, or Intel Fortran for parallel runs. Otherwise, go for a serial run.
 5. Download IMDAA data and keep all files (single- and pressure-level data) in one directory. Give this directory path as "imdaa_data_path" in the user input section. Do not keep single and pressure-level data separately in different directories.
-7. The user must have a namelist.wps in order to run this script. Give the full path in user_input.sh (preferably keep namelist.wps in a different location to stay unchanged).
+7. The user must have a namelist.wps to run this script. Give the full path in user_input.sh (preferably keep namelist.wps in a different location to stay unchanged).
 
 # How to use:
 1. Download IMDAA data and keep all files (single and pressure-level data) in one directory. Give this directory path as "imdaa_data_path" in the user_input file. Do not keep single and pressure-level data separately in different directories.
@@ -31,7 +31,7 @@ The purpose of this shell script is to run the WPS program with IMDAA data to pr
 For a detailed description, you may go through the documentation [here](https://github.com/NCMRWF/WRF_IMDAAv2/blob/main/document/WRF_IMDAA_USER_GUIDE.pdf).
 
 # Help
-If you are facing any issues while running this script, please raise a concern [here](https://github.com/NCMRWF/WRF_IMDAAv2/issues) or send an email to vhazra@ncmrwf.gov.in
+If you are facing any issues while running this script, please raise a concern [here](https://github.com/NCMRWF/WRF_IMDAAv2/issues) or send an email to vivek.hazra@nic.in
 
 regards,
 
