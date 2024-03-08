@@ -20,7 +20,7 @@
 # Team: V. Hazra, Gibies George, Syam Sankar, S. Indira Rani, Mohan S. Thota, John P. George, Sumit Kumar, 		|
 #	Laxmikant Dhage													|
 # National Centre for Medium-Range Weather Forecasting, ESSO, Ministry of Earth Sciences, Govt. of India		|
-# Contact if any issue arises while running this script: vhazra@ncmrwf.gov.in						|
+# Contact if any issue arises while running this script: vivek.hazra@nic.in						|
 # Copyright @ NCMRWF, MoES, 2023											|
 #															|
 #-------------------------------------------	PREREQUISITES	--------------------------------------------------------|
