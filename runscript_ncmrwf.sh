@@ -20,7 +20,7 @@
 # Team: V. Hazra, Gibies George, Syam Sankar, S. Indira Rani, Mohan S. Thota, John P. George, Sumit Kumar, 		|
 #	Laxmikant Dhage													|
 # National Centre for Medium-Range Weather Forecasting, ESSO, Ministry of Earth Sciences, Govt. of India		|
-# Contact if any issue arises while running this script: vivek.hazra@nic.in						|
+# Contact if any issue arises while running this script: vhazra.c4pi@nic.in						|
 # Copyright @ NCMRWF, MoES, 2023											|
 #															|
 #-------------------------------------------	PREREQUISITES	--------------------------------------------------------|
@@ -75,7 +75,7 @@
 # This script assumes you have installed wgrib2, netcdf4, openmpi or mpich (if parallel), and the WPS program 		|
 # prior to running this script.												|
 #															|
-# Author : Vivekananda Hazra (vhazra@ncmrwf.gov.in)									|
+# Author : Vivekananda Hazra (vhazra.c4pi@nic.in)									|
 # Version : 30-Sep-2023													|
 #------------------------------------------------------------------------------------------------------------------------
 
