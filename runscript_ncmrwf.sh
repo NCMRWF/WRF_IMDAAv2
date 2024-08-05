@@ -96,7 +96,6 @@ if [ -f "$nml" ]; then
 
         Proceeding ...
         \n"
-        sleep 0.5
 	chmod +x user_input.sh
 	source user_input.sh
 else
@@ -345,7 +344,6 @@ else
 
                 Proceeding ...
                 \n"
-                sleep 0.5
 		cp -rf $currdir/tables/METGRID.TBL_NCUM2 METGRID.TBL
 		cp -rf $currdir/tables/Vtable.NCUM2 Vtable
 		export GRIB2TABLE=$currdir/tables/ncmr_grib2_local_table2
@@ -558,12 +556,10 @@ if [ "$choice" = "yes" ]; then
         The selected number of processors: $nproc
 
         \n"
-	sleep 1
 	if [[ $mpich_check == *"MPICH"* ]]; then
 		echo -e "\n
 	${BGreen}MPICH is installed.${NC} Proceeding ...
 		\n"
-		sleep 0.5
 		export RUN_COMMAND1="mpirun -np 1 ./ungrib.exe "
         	export RUN_COMMAND2="mpirun -np $nproc ./metgrid.exe "
         	export RUN_COMMAND3="mpirun -np $nproc ./geogrid.exe "
@@ -571,7 +567,6 @@ if [ "$choice" = "yes" ]; then
     		echo -e "\n
 	${BGreen}OpenMPI is installed.${NC} Proceeding ...
 		\n"
-		sleep 0.5
 		export RUN_COMMAND1="mpirun -np 1 ./ungrib.exe "
         	export RUN_COMMAND2="mpirun -np $nproc ./metgrid.exe "
         	export RUN_COMMAND3="mpirun -np $nproc ./geogrid.exe "
@@ -579,7 +574,6 @@ if [ "$choice" = "yes" ]; then
 		echo -e "\n
         ${BGreen}Intel C compiler is installed.${NC} Proceeding ...
 		\n"
-		sleep 0.5
 		export RUN_COMMAND1="mpirun -np 1 ./ungrib.exe "
                 export RUN_COMMAND2="mpirun -np $nproc ./metgrid.exe "
                 export RUN_COMMAND3="mpirun -np $nproc ./geogrid.exe "
@@ -587,7 +581,6 @@ if [ "$choice" = "yes" ]; then
 		echo -e "\n
         ${BGreen}Intel Fortran compiler is installed.${NC} Proceeding ...
 		\n"
-		sleep 0.5
 		export RUN_COMMAND1="mpirun -np 1 ./ungrib.exe "
                 export RUN_COMMAND2="mpirun -np $nproc ./metgrid.exe "
                 export RUN_COMMAND3="mpirun -np $nproc ./geogrid.exe "
@@ -624,7 +617,6 @@ elif [ "$choice" = "no" ]; then
 	You have opted for a ${BGreen}serial${NC} run ...
 	
 	\n"
-	sleep 0.5
 	export RUN_COMMAND1="./ungrib.exe "
 	export RUN_COMMAND2="./metgrid.exe "
 	export RUN_COMMAND3="./geogrid.exe "
@@ -652,7 +644,6 @@ if command -v wgrib2 &>/dev/null; then
     echo -e "\n
     	${BGreen}WGRIB2 is installed.${NC} Proceeding ...
 	\n"
-	sleep 0.5
 else
     echo -e "\n
     \n 
@@ -678,7 +669,6 @@ if command -v ncks &> /dev/null; then
     echo -e "\n
         ${BGreen}NCKS is installed.${NC} Proceeding ...
         \n"
-        sleep 0.5
 else
     echo -e "\n
     \n
@@ -749,7 +739,6 @@ if command -v grib_set &> /dev/null; then
                 ${BGreen}
         ecCodes is installed.${NC} Proceeding ...
                 \n"
-                sleep 0.5
         fi
 else
     echo -e "\n
@@ -780,7 +769,6 @@ if command -v ncdump &>/dev/null; then
     echo -e "\n
         ${BGreen}NETCDF4 is installed.${NC} Proceeding ...
 	\n"
-	sleep 0.5
 else
     echo -e "\n
     \n 
@@ -833,7 +821,6 @@ else
 		
 		Proceeding ...
 		\n"
-		sleep 0.5
 	else
     		echo -e "\n 
 		WPS folder exists. But one or more of the required files are missing or not executable"
@@ -885,7 +872,6 @@ if $SORT_IMDAA; then
 	                echo -e "\n
         	        Extracting ${BGreen}$subset${NC} from IMDAA ...
 	                \n"
-        	        sleep 0.5
 	                found_file=$(find "$imdaa_data_path" -type f -name "*_${subset}_*")
         	        if [ -e "$found_file" ]; then
 				if [ "$current_hour" -eq 0 ] || [ "$current_hour" -eq 6 ] || [ "$current_hour" -eq 12 ] || [ "$current_hour" -eq 18 ]
@@ -1027,7 +1013,6 @@ if $RUN_GEOGRID; then
 	So, going for ${BGreen}GEOGRID${NC} run ...
 	\n"
 	rm -rf geo_em.d0* .namelist.wps.geogrid geogrid.log geogrid.log.0000 .log_geogrid.out
-	sleep 0.5
 
 	if [ ! -e "GEOGRID.TBL" ] && [ ! -e "$namelistfile" ]; then
                 echo -e "\n
@@ -1058,7 +1043,6 @@ if $RUN_GEOGRID; then
 	
 	       		 Proceeding ...
         		\n"
-        		sleep 0.5
 	  	else
         		echo -e "\n
 			\n
@@ -1947,7 +1931,7 @@ elif [ -f "$METFILE2" ]; then
                 fi
         done
 else
-        sleep 5
+        sleep 1
         echo  -e "\n 
 	\n
 	\n
