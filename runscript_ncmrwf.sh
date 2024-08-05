@@ -982,7 +982,7 @@ while [ "$current_timestamp" -le "$end_timestamp" ]; do
 
 	Proceeding ...
                                         \n"
-                                        sleep 0.5
+                                        sleep 0.1
                                 fi
                         else
                                 echo -e "\n
@@ -1500,7 +1500,7 @@ Exiting ...
                         fi
                 done
 	else
-        	sleep 0.5
+        	sleep 0.1
 	        echo  -e "\n 
   		\n 
   		\n 
@@ -1546,7 +1546,7 @@ if $RUN_UNGRIB; then
 	do
 		echo -e "\n Running ungrib for ${param} ..."
 		sed -i "s/prefix.*/prefix = '${param}',/g" $namelistfile
-		sleep 0.5
+		sleep 0.1
 		str0=`cat $namelistfile|grep fg_name`
 		str1="${str0}"
 		str2=${param}
@@ -1670,7 +1670,7 @@ if $all_non_zero; then
 			if [ -e "METGRID.TBL" ]; then
 				cp -rf .namelist.wps.ungrib $namelistfile
 				${RUN_COMMAND2}  > .log_metgrid 2>&1
-				sleep 1
+				sleep 0.5
 			else
 				echo -e "\n
 		                ${BRed}			FATAL ERROR \n
