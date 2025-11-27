@@ -31,8 +31,8 @@ The purpose of this shell script is to run the WPS program with IMDAA data to pr
 For a detailed description, you may go through the documentation [here](https://github.com/NCMRWF/WRF_IMDAAv2/blob/main/document/WRF_IMDAA_USER_GUIDE.pdf).
 
 # Help
-If you are facing any issues while running this script, please raise a concern [here](https://github.com/NCMRWF/WRF_IMDAAv2/issues) or send an email to vhazra.c4pi@nic.in
+If you are facing any issues while running this script, please raise a concern [here](https://github.com/NCMRWF/WRF_IMDAAv2/issues) or send an email to indira@ncmrwf.gov.in with cc to hari@ncmrwf.gov.in
 
 regards,
 
-V Hazra
+Team IMDAA
